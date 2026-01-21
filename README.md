@@ -8,13 +8,13 @@ A Portable PowerShell admin toolkit for Microsoft Graph workflows using delegate
    `C:\Tools\GratBox\`
 
 2. Launch the toolkit (recommended):
-   - `launchers\Launch-GratBox.cmd`
+   - `Launch-GratBox.cmd`
 
 3. Follow the device-code login prompt.
 
 ## Folder layout
 
-- `launchers\`  - cmd launchers for portable use
+- `\`  - cmd launchers for portable use
 - `Scripts\`    - utility scripts
 - `modules\`    - bundled PowerShell components used by the toolkit
 - `Logs\`       - runtime logs (not committed)

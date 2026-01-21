@@ -1,0 +1,13 @@
+Logs/*
+Reports/*
+Imports/*
+!Logs/.gitkeep
+!Reports/.gitkeep
+!Imports/.gitkeep
+
+*.log
+*.csv
+*.zip
+*.7z
+.vscode/
+.DS_Store

@@ -1,25 +1,23 @@
 # Graph Administrator Toolbox (GratBox)
 
-A Portable PowerShell admin toolkit for Microsoft Graph workflows using delegated device-code authentication.
+A portable PowerShell admin toolkit for Microsoft Graph workflows using delegated device-code authentication.
 
 ## Quick start (portable)
 
-1. Download the latest release ZIP and extract to a folder, for example:
-   `C:\Tools\GratBox\`
-
+1. Download the latest release ZIP and extract to a folder, for example: `C:\Tools\GratBox\`
 2. Launch the toolkit (recommended):
    - `Launch-GratBox.cmd`
-
 3. Follow the device-code login prompt.
 
 ## Folder layout
 
-- `\`  - cmd launchers for portable use
-- `Scripts\`    - utility scripts
-- `modules\`    - bundled PowerShell components used by the toolkit
-- `Logs\`       - runtime logs (not committed)
-- `Reports\`    - exported reports (not committed)
-- `Imports\`    - optional input data (not committed)
+- `\` — cmd launchers for portable use
+- `Scripts\` — utility scripts
+- `modules\` — bundled PowerShell components used by the toolkit
+- `Logs\` — runtime logs (not committed)
+- `Reports\` — exported reports (not committed)
+- `Imports\` — optional input data (not committed)
+- `docs\` — supplemental documentation and notes
 
 ## Adding your own scripts/modules
 
@@ -28,4 +26,4 @@ A Portable PowerShell admin toolkit for Microsoft Graph workflows using delegate
 
 ## Known limitations
 
-- Some Microsoft Graph behaviors are limited under device-code auth. Where applicable, cmdlets will warn and exit cleanly rather than producing partial/incorrect results.
+Some Microsoft Graph behaviors are limited under device-code auth. Where applicable, cmdlets will warn and exit cleanly rather than producing partial/incorrect results.

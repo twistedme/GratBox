@@ -1,34 +1,19 @@
-\## v3.3
+## v0.1.0
 
+First public GitHub release (portable toolkit).
 
+### Added
+- Portable toolkit layout (launchers, Scripts, modules, docs)
+- Export-GratBoxBitLockerKeyPresenceFromGroup cmdlet (currently gated under device-code auth)
+- Get-GratBoxPath helper for consistent portable path resolution
+- Write-GratBoxLog helper for lightweight, consistent logging
 
-\### Added
+### Notes
+- BitLocker recovery key visibility via Graph requires delegated permission `BitLockerKey.Read.All`
+  (admin consent for the Microsoft Graph PowerShell first-party application).
+- Some Microsoft Graph behaviors are limited under delegated device-code authentication. Where applicable,
+  cmdlets will warn and exit cleanly rather than producing partial/incorrect results.
 
-\- Export-GratBoxBitLockerKeyPresenceFromGroup cmdlet for validating BitLocker status
-
-&nbsp; across single devices or Entra ID device groups
-
-\- Get-GratBoxPath helper for consistent portable vs installed path resolution
-
-\- Write-GratBoxLog helper for lightweight, consistent logging
-
-
-
-\### Improved
-
-\- Release-ready comment-based help for BitLocker export cmdlet
-
-\- Clear INFO messaging when BitLocker Graph permissions are unavailable
-
-
-
-\### Notes
-
-\- BitLocker recovery key visibility requires delegated Microsoft Graph permission
-
-&nbsp; BitLockerKey.Read.All approved for the Microsoft Graph PowerShell application.
-
-\- When unavailable, recovery key status is reported as `Unknown` without blocking execution.
 
 
 
